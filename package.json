@@ -1,0 +1,29 @@
+{
+  "name": "vscode-debug-mocha-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/givanse/vscode-debug-mocha-tests.git"
+  },
+  "keywords": [
+    "vscode",
+    "debug",
+    "mocha",
+    "tests"
+  ],
+  "author": "@givanse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/givanse/vscode-debug-mocha-tests/issues"
+  },
+  "homepage": "https://github.com/givanse/vscode-debug-mocha-tests#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
