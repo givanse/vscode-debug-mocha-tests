@@ -1,0 +1,20 @@
+{
+
+  "presets": ["es2015", "stage-0"],
+
+  "only": ["src", "test"],
+
+  "env": {
+
+    "production": {
+
+      "comments": false,
+
+      "compact": true,
+
+      "minified": true
+    }
+
+  }
+
+}

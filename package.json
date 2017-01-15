@@ -1,29 +1,42 @@
 {
-  "name": "vscode-debug-mocha-tests",
+  "name": "vscode-karma-mocha-webpack-babel-abracadabra",
   "version": "1.0.0",
-  "description": "",
+  "description": "test and debug with vscode karma mocha webpack babel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "webpack",
+    "execute": "npm run dist && node dist/bundle.js",
+    "test": "karma --single-run true start",
+    "test-watch": "karma start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/givanse/vscode-debug-mocha-tests.git"
+    "url": "git+https://github.com/givanse/vscode-karma-mocha-webpack-babel-abracadabra.git"
   },
   "keywords": [
     "vscode",
-    "debug",
+    "karma",
     "mocha",
-    "tests"
+    "webpack",
+    "babel"
   ],
   "author": "@givanse",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/givanse/vscode-debug-mocha-tests/issues"
+    "url": "https://github.com/givanse/vscode-karma-mocha-webpack-babel-abracadabra/issues"
   },
-  "homepage": "https://github.com/givanse/vscode-debug-mocha-tests#readme",
+  "homepage": "https://github.com/givanse/vscode-karma-mocha-webpack-babel-abracadabra#readme",
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-webpack": "^2.0.1",
+    "mocha": "^3.2.0",
+    "webpack": "^1.14.0"
   }
 }

@@ -1,23 +1,23 @@
-// http://stackoverflow.com/q/41399071/7852
 {
   // Use IntelliSense to learn about possible Node.js debug attributes.
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+    /**
+     * To debug with the transpiled files:
+     *  - Disconnect the process
+     *  - comment "webroot"
+     *  - Attach to the process again
+     */
     {
-      "type": "node",
-      "request": "launch",
-      "name": "Tests",
-      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-      "args": [ "--no-timeouts", "--colors", "test/average.test"],
-      "cwd": "${workspaceRoot}"
-    },
-    {
-      "type": "node",
+      "type": "chrome", // install the vscode extension: vscode-chrome-debug
       "request": "attach",
-      "name": "Attach to Process",
-      "port": 5858
+      "name": "Karma Chrome",
+      "url": "http://localhost:*/karma-runner/debug.html",
+      "webRoot": "${workspaceRoot}", // comment to debug on the transpiled files
+      "skipFiles": ["node_modules"],
+      "port": 9222
     }
   ]
 }

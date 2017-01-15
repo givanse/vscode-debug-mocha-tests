@@ -1,5 +1,5 @@
-const {expect} = require('chai');
-const average = require('../average.js');
+import {expect} from 'chai';
+import average from '../src/average.js';
 
 describe('Average', function() {
 

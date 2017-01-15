@@ -1,2 +1,3 @@
-Trying to figure out:
-http://stackoverflow.com/q/41399071/7852
+# vscode-karma-mocha-webpack-babel-abracadabra
+
+See the scripts section in the `package.js` file for the build and test commands.
