@@ -22,8 +22,6 @@ var karmaConfig = {
 
   frameworks: ['mocha'],
 
-  logLevel: config.LOG_DEBUG,
-
   preprocessors: {
     'test/**/*.js': ['webpack']
   },
@@ -44,5 +42,6 @@ var karmaConfig = {
 };
 
 module.exports = function(config) {
+  karmaConfig.logLevel = config.LOG_DEBUG;
   config.set(karmaConfig);
 };

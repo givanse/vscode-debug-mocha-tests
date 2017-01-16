@@ -10,8 +10,8 @@ describe('Math', function() {
   });
 
   it('has a method called `average`', function() {
-    const r = typeof math.average;
-    expect(r).to.be.equal('function');
+    const result = typeof math.average;
+    expect(result).to.be.equal('function');
   });
 
 });

@@ -1,9 +1,14 @@
 import Math from './math.js'
 
+function logger() {
+  /* eslint-disable no-console */
+  console.log(arguments);
+}
+
 let math = new Math();
 
-let arr = [100, 200, 300];
+let numbers = [100, 200, 300];
 
-console.log('average: ', math.average(arr));
+logger('average: ', math.average(numbers));
 
-console.log('sum: ', math.sum(arr));
+logger('sum: ', math.sum(numbers));

@@ -1,11 +1,13 @@
 export default function(numbers) {
-  let av = 0;
-  for (let n of numbers) {
-    av += n;
+  /*eslint no-unreachable: "warn"*/
+  
+  let avrg = 0;
+  for (let number of numbers) {
+    avrg += number;
   }
 
   throw new Error('debug here with vscode, but how?');
-  const r = av / numbers.length;
+  const result = avrg / numbers.length;
 
-  return r;
+  return result;
 }
